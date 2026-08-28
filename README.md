@@ -52,3 +52,5 @@ One commit today is better than zero.
 Months from now, this repository won't just contain solutions—it will tell the story of how I became a better engineer.
 
 Future me is counting on today's me.
+
+# missed the streak on 28 aug- will have to do 6 question next day
