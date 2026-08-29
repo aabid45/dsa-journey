@@ -25,6 +25,7 @@
 ## 📈 Progress
 
 - Basic Maths: **7/50**
+- Recursion: **5/20**
 - Arrays: **0/50**
 - Strings: **0/40**
 - Linked List: **0/35**
@@ -39,7 +40,7 @@
 - Dynamic Programming: **0/70**
 - Bit Manipulation: **0/20**
 
-**Total Problems Solved:** **7/550**
+**Total Problems Solved:** **12/570**
 
 ---
 
