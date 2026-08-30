@@ -24,8 +24,8 @@
 
 ## 📈 Progress
 
-- Basic Maths: **7/50**
-- Recursion: **7/20**
+- Basic Maths: **9/50**
+- Recursion: **9/20**
 - Arrays: **0/50**
 - Strings: **0/40**
 - Linked List: **0/35**
@@ -40,7 +40,7 @@
 - Dynamic Programming: **0/70**
 - Bit Manipulation: **0/20**
 
-**Total Problems Solved:** **14/570**
+**Total Problems Solved:** **18/570**
 
 ---
 
@@ -53,5 +53,3 @@ One commit today is better than zero.
 Months from now, this repository won't just contain solutions—it will tell the story of how I became a better engineer.
 
 Future me is counting on today's me.
-
-# missed the streak on 28 aug- will have to do 6 question next day - completed on 29(will remove this line in next commit)
