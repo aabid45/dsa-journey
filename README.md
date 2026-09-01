@@ -24,9 +24,9 @@
 
 ## 📈 Progress
 
-- Basic Maths: **10/50**
+- Basic Maths: **11/50**
 - Recursion: **10/20**
-- HashMap: **2/10**
+- HashMap: **3/10**
 - Arrays: **0/50**
 - Strings: **0/40**
 - Linked List: **0/35**
