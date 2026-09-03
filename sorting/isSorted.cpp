@@ -3,12 +3,10 @@ using namespace std;
 
 bool isArraySorted(int n, int arr[])
 {
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n - 1; i++)
     {
-        if(arr[i]>arr[i+1]){
+        if (arr[i] > arr[i + 1])
             return false;
-            break;
-        }    
     }
     return true;
 }
@@ -23,7 +21,7 @@ int main()
         cin >> arr[i];
     }
     if (isArraySorted(n, arr))
-        cout << " Sorted";
+        cout << "Sorted";
     else
         cout << "Not Sorted";
     return 0;
