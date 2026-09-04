@@ -28,7 +28,7 @@
 - Recursion: **10/20**
 - HashMap: **3/10**
 - sorting: **1/5**
-- Arrays: **3/50**
+- Arrays: **4/50**
 - Strings: **0/40**
 - Linked List: **0/35**
 - Stack: **0/30**
@@ -42,7 +42,7 @@
 - Dynamic Programming: **0/70**
 - Bit Manipulation: **0/20**
 
-**Total Problems Solved:** **28/580**
+**Total Problems Solved:** **29/580**
 
 ---
 
