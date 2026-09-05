@@ -10,8 +10,8 @@ void selectionSort(int arr[], int n)
         {
             if (arr[j] < arr[minimum])
             {
-                minimum = j;   
-                cout <<arr[minimum]<<endl;         
+                minimum = j;
+                cout << arr[minimum] << endl;
             }
         }
         int tempp = arr[minimum];
@@ -31,7 +31,7 @@ int main()
     }
     selectionSort(arr, n);
 
-      for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         cout << arr[i];
     }

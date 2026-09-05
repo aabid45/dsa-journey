@@ -27,7 +27,7 @@
 - Basic Maths: **11/50**
 - Recursion: **10/20**
 - HashMap: **3/10**
-- sorting: **1/5**
+- sorting: **3/5**
 - Arrays: **4/50**
 - Strings: **0/40**
 - Linked List: **0/35**
@@ -42,7 +42,7 @@
 - Dynamic Programming: **0/70**
 - Bit Manipulation: **0/20**
 
-**Total Problems Solved:** **29/580**
+**Total Problems Solved:** **31/580**
 
 ---
 
