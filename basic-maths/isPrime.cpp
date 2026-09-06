@@ -13,11 +13,8 @@ bool isPrime(int number)
         {
             return false;
         }
-        else
-        {
-            return true;
-        }
     }
+    return true;
 }
 
 int main()
