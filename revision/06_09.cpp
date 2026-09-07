@@ -129,26 +129,74 @@ using namespace std;
 //     printNumber(i + 1, n);
 //     cout << i;
 // }
-void fiboncci(int n)
-{
-    // if(n<=1) return n;
-    // return fiboncci(n-2)+fiboncci(n-1);
-    int num1 = 0;
-    int num2 = 1;
-    int curr = 0;
+// void fiboncci(int n)
+// {
+//     // if(n<=1) return n;
+//     // return fiboncci(n-2)+fiboncci(n-1);
+//     int num1 = 0;
+//     int num2 = 1;
+//     int curr = 0;
 
-    for (int i = 2; i <= n; i++)
-    {
-        curr = num1 + num2;
-        num1 = num2;
-        num2 = curr;
-    }
-    cout << curr;
-}
+//     for (int i = 2; i <= n; i++)
+//     {
+//         curr = num1 + num2;
+//         num1 = num2;
+//         num2 = curr;
+//     }
+//     cout << curr;
+// }
+// int factorial(int n, int fact)
+// {
+//     if (n < 1)
+//         return fact;
+//     return factorial(n - 1, n * fact);
+// }
+
+// void reverseArray(int s, int e, int arr[])
+// {
+//     if(s>=e) return;
+//     swap(arr[s], arr[e]);
+//     reverseArray(s+1, e-1, arr);
+// }
+
+// void reverseString(int i, int n, string &str)
+// {
+//     if (i >= n / 2)
+//     {
+//         cout << str;
+//         return;
+//     }
+//     swap(str[i], str[n - i - 1]);
+//     reverseString(i + 1, n, str);
+// }
+
+// bool isStringPalindrome(int s, int e, string &str)
+// {
+//     if (s >= e)
+//         return true;
+//     if (str[s] != str[e])
+//     {
+//         return false;
+//     }
+//     isStringPalindrome(s + 1, e - 1, str);
+// }
+
+// bool isPalindrome(int i, int n, string &str)
+// {
+//     while (i <= n / 2)
+//     {
+//         if (str[i] != str[n - i - 1])
+//         {
+//             return false;
+//         }
+//         i++;
+//     }
+//     return true;
+// }
 int main()
 {
-    int n;
-    cin >> n;
+    // int n;
+    // cin >> n;
     // countDigit(n);
     // reverseNumber(n);
     // isArmstrong(n);
@@ -162,7 +210,67 @@ int main()
     // cin >> a >> b;
     // GcdHcf(a, b);
     // printNumber(1, n);
-    fiboncci(n);
+    // fiboncci(n);
+    // cout << factorial(n, 1);
+    // int arr[n];
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cin >> arr[i];
+    // }
+    // reverseArray(0, n-1, arr);
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cout << arr[i];
+    // }
+    // string str;
+    // cin >> str;
+    // size_t n = str.size();
+    // reverseString(0, n, str);
+    // if (isStringPalindrome(0, n - 1, str))
+    //     cout << "String is Palindrome";
+    // else
+    //     cout << "String is not Palindrome";
+    // if (isPalindrome(0, n, str))
+    //     cout << "Palindrome";
+    // else
+    //     cout << "NOT Palindrome";
+
+    // int n;
+    // cin >> n;
+    // int arr[n];
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cin >> arr[i];
+    // }
+    // precomputations
+    // int hash[12] = {0};
+    // map<int, int> mpp;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     mpp[arr[i]]++;
+    // }
+
+    // string str;
+    // cin >> str;
+    // int n = str.length();
+    // // int hash[26] = {0};
+    // map<char, int> mpp;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     mpp[str[i]]++;
+    // }
+
+    // // fetch
+    // int quries;
+    // cin >> quries;
+    // while (quries--)
+    // {
+    //     // int n;
+    //     // cin >> n;
+    //     char c;
+    //     cin >> c;
+    //     cout << mpp[c];
+    // }
 
     return 0;
 }
