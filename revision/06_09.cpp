@@ -193,6 +193,80 @@ using namespace std;
 //     }
 //     return true;
 // }
+
+// void largestElement(int n, int arr[])
+// {
+//     int maxindex = 0;
+//     for (int i = 1; i < n; i++)
+//     {
+//         if (arr[i]>arr[maxindex])
+//         {
+//             maxindex = i;
+//         }
+//     }
+//     cout << arr[maxindex];
+// }
+
+// void smallestElement(int n, int arr[])
+// {
+//     int minindex = 0;
+//     for (int i = 1; i < n; i++)
+//     {
+//         if (arr[i] < arr[minindex])
+//         {
+//             minindex = i;
+//         }
+//     }
+//     cout << arr[minindex];
+// }
+
+// void selectionSort(int n, int arr[])
+// {
+//     for (int i = 0; i <= n - 1; i++)
+//     {
+//         int mini = i;
+//         for (int j = i+1; j < n; j++)
+//         {
+//             if (arr[j] < arr[mini])
+//             {
+//                 mini = j;
+//             }
+//         }
+//         int temp = arr[mini];
+//         arr[mini] = arr[i];
+//         arr[i] = temp;
+//     }
+// }
+
+// void bubbleSort(int n, int arr[])
+// {
+//     for (int i = n - 1; i >= 0; i--)
+//     {
+//         for (int j = 0; j <= i - 1; j++)
+//         {
+//             if (arr[j] > arr[j + 1])
+//             {
+//                 int temp = arr[j + 1];
+//                 arr[j + 1] = arr[j];
+//                 arr[j] = temp;
+//             }
+//         }
+//     }
+// }
+void selectionSort(int n, int arr[])
+{
+    for (int i = 0; i < n; i++)
+    {
+        int j = i;
+        while (j > 0 && arr[j - 1] > arr[j])
+
+        {
+            swap(arr[j - 1], arr[j]);
+            j--;
+        }
+    }
+}
+
 int main()
 {
     // int n;
@@ -272,5 +346,24 @@ int main()
     //     cout << mpp[c];
     // }
 
+    int n;
+    cin >> n;
+    int arr[n];
+
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+
+    // largestElement(n, arr);
+    // smallestElement(n, arr);
+    // selectionSort(n, arr);
+    // bubbleSort(n, arr);
+    selectionSort(n, arr);
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i];
+    }
     return 0;
 }
