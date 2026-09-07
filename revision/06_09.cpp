@@ -253,7 +253,7 @@ using namespace std;
 //         }
 //     }
 // }
-void selectionSort(int n, int arr[])
+void insertionSort(int n, int arr[])
 {
     for (int i = 0; i < n; i++)
     {
@@ -359,7 +359,7 @@ int main()
     // smallestElement(n, arr);
     // selectionSort(n, arr);
     // bubbleSort(n, arr);
-    selectionSort(n, arr);
+    insertionSort(n, arr);
 
     for (int i = 0; i < n; i++)
     {
