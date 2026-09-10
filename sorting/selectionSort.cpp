@@ -1,40 +1,73 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void selectionSort(int arr[], int n)
+void merge(int arr[], int low, int mid, int high)
 {
-    for (int i = 0; i <= n - 2; i++)
+    vector<int> temp;
+
+    int left = low;
+    int right = mid + 1;
+
+    while (left <= mid && right <= high)
     {
-        int minimum = i;
-        for (int j = i; j <= n - 1; j++)
+        if (arr[left] <= arr[right])
         {
-            if (arr[j] < arr[minimum])
-            {
-                minimum = j;
-                cout << arr[minimum] << endl;
-            }
+            temp.push_back(arr[left]);
+            left++;
         }
-        int tempp = arr[minimum];
-        arr[minimum] = arr[i];
-        arr[i] = tempp;
+        else
+        {
+            temp.push_back(arr[right]);
+            right++;
+        }
     }
+
+    while (left <= mid)
+    {
+        temp.push_back(arr[left]);
+        left++;
+    }
+
+    while (right <= high)
+    {
+        temp.push_back(arr[right]);
+        right++;
+    }
+
+    for (int i = low; i <= high; i++)
+    {
+        arr[i] = temp[i - low];
+    }
+}
+
+void mergeSort(int arr[], int low, int high)
+{
+    if (low >= high)
+        return;
+
+    int mid = (low + high) / 2;
+
+    mergeSort(arr, low, mid);
+
+    mergeSort(arr, mid + 1, high);
+
+    merge(arr, low, mid, high);
 }
 
 int main()
 {
     int n;
     cin >> n;
+
     int arr[n];
-    for (int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
-    }
-    selectionSort(arr, n);
 
     for (int i = 0; i < n; i++)
-    {
-        cout << arr[i];
-    }
+        cin >> arr[i];
+
+    mergeSort(arr, 0, n - 1);
+
+    for (int i = 0; i < n; i++)
+        cout << arr[i] << " ";
 
     return 0;
 }
