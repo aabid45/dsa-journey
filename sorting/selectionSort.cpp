@@ -1,73 +1,80 @@
+// sort in ascending order
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// void selectionSort(int arr[], int n)
+// {
+//     for (int i = 0; i <= n - 2; i++)
+//     {
+//         int minimum = i;
+//         for (int j = i + 1; j <= n; j++)
+//         {
+//             if (arr[j] < arr[minimum])
+//             {
+//                 minimum = j;
+//                 cout << arr[minimum] << endl;
+//             }
+//         }
+//         int tempp = arr[minimum];
+//         arr[minimum] = arr[i];
+//         arr[i] = tempp;
+//     }
+// }
+
+// int main()
+// {
+//     int n;
+//     cin >> n;
+//     int arr[n];
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> arr[i];
+//     }
+//     selectionSort(arr, n);
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         cout << arr[i];
+//     }
+
+//     return 0;
+// }
+
+//****** sort in descending order
 #include <bits/stdc++.h>
 using namespace std;
 
-void merge(int arr[], int low, int mid, int high)
+void selectionSort(int n, int arr[])
 {
-    vector<int> temp;
-
-    int left = low;
-    int right = mid + 1;
-
-    while (left <= mid && right <= high)
+    for (int i = 0; i <= n - 2; i++)
     {
-        if (arr[left] <= arr[right])
+        int maxindex = i;
+        for (int j = i + 1; j <= n-1; j++)
         {
-            temp.push_back(arr[left]);
-            left++;
+            if (arr[j] > arr[maxindex])
+            {
+                maxindex = j;
+            }
         }
-        else
-        {
-            temp.push_back(arr[right]);
-            right++;
-        }
+        int temp = arr[maxindex];
+        arr[maxindex] = arr[i];
+        arr[i] = temp;
     }
-
-    while (left <= mid)
-    {
-        temp.push_back(arr[left]);
-        left++;
-    }
-
-    while (right <= high)
-    {
-        temp.push_back(arr[right]);
-        right++;
-    }
-
-    for (int i = low; i <= high; i++)
-    {
-        arr[i] = temp[i - low];
-    }
-}
-
-void mergeSort(int arr[], int low, int high)
-{
-    if (low >= high)
-        return;
-
-    int mid = (low + high) / 2;
-
-    mergeSort(arr, low, mid);
-
-    mergeSort(arr, mid + 1, high);
-
-    merge(arr, low, mid, high);
 }
 
 int main()
 {
     int n;
     cin >> n;
-
     int arr[n];
-
     for (int i = 0; i < n; i++)
+    {
         cin >> arr[i];
-
-    mergeSort(arr, 0, n - 1);
+    }
+    selectionSort(n, arr);
 
     for (int i = 0; i < n; i++)
-        cout << arr[i] << " ";
-
-    return 0;
+    {
+        cout << arr[i];
+    }
 }

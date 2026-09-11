@@ -27,7 +27,7 @@
 - Basic Maths: **11/50**
 - Recursion: **10/20**
 - HashMap: **3/10**
-- sorting: **4/5**
+- sorting: **5/10**
 - Arrays: **4/50**
 - Strings: **0/40**
 - Linked List: **0/35**
@@ -55,4 +55,3 @@ One commit today is better than zero.
 Months from now, this repository won't just contain solutions—it will tell the story of how I became a better engineer.
 
 Future me is counting on today's me.
-missed on 9/9 - will have to cover next day
