@@ -1,20 +1,20 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// int factorial(int i, int n)
-// {
-//     if (n < 1)
-//         return i;
-//     return factorial(i * n, n - 1);
-// }
+int factorial(int i, int n)
+{
+    if (n < 1)
+        return i;
+    return factorial(i * n, n - 1);
+}
 
-// void reverseArray(int n, int arr[], int i)
-// {
-//     if (i >= n / 2)
-//         return;
-//     swap(arr[i], arr[n - i - 1]);
-//     reverseArray(n, arr, i + 1);
-// }
+void reverseArray(int n, int arr[], int i)
+{
+    if (i >= n / 2)
+        return;
+    swap(arr[i], arr[n - i - 1]);
+    reverseArray(n, arr, i + 1);
+}
 
 bool isStringPalindrome(int n, string &str, int i)
 {
@@ -25,6 +25,12 @@ bool isStringPalindrome(int n, string &str, int i)
     isStringPalindrome(n, str, i + 1);
 }
 
+int fibonacci(int n)
+{
+    if (n <= 1)
+        return n;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
 int main()
 {
     // int n = 5;
@@ -50,13 +56,30 @@ int main()
 
     // cout << factorial(1, n);
 
-    string str;
-    cin >> str;
-    int n = str.size();
+    // string str;
+    // cin >> str;
+    // int n = str.size();
 
-    if (isStringPalindrome(n, str, 1))
-        cout << "True";
-    else
-        cout << "False";
+    // if (isStringPalindrome(n, str, 1))
+    //     cout << "True";
+    // else
+    //     cout << "False";
+
+    int n;
+    cin >> n;
+    cout << fibonacci(n);
+    // int num1 = 0;
+    // int num2 = 1;
+    // int current = 0;
+    // for (int i = 2; i < n; i++)
+    // {
+    //     cout << current<<" ";
+    //     current = num1 + num2;
+    //     num1 = num2;
+    //     num2 = current;
+    // }
+
+    // cout << current;
+
     return 0;
 }

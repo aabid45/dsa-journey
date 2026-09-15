@@ -22,21 +22,20 @@ using namespace std;
 //     cout <<current;
 // }
 
-void nthFibonacci(int n){
+void nthFibonacci(int n)
+{
     int num1 = 0;
     int num2 = 1;
     int current = 0;
 
-    for(int i = 2; i<=n; i++){
-        current = num1+num2;
-        cout <<current<<" ";
+    for (int i = 2; i <= n; i++)
+    {
+        current = num1 + num2;
+        cout << current << " ";
         num1 = num2;
         num2 = current;
     }
-    
-
 }
-
 
 int main()
 {
