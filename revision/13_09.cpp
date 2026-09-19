@@ -31,6 +31,38 @@ int fibonacci(int n)
         return n;
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
+
+void selectionSort(int n, int arr[])
+{
+    for (int i = 0; i <= n - 2; i++)
+    {
+        int minindex = i;
+        for (int j = i + 1; j <= n; j++)
+        {
+            if (arr[j] < arr[minindex])
+            {
+                minindex = j;
+            }
+        }
+        int temp = arr[minindex];
+        arr[minindex] = arr[i];
+        arr[i] = temp;
+    }
+}
+
+bool isArraySorted(int n, int arr[])
+{
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] > arr[i+1])
+        {
+            return false;
+        }
+    }
+
+    return true;
+}
+
 int main()
 {
     // int n = 5;
@@ -65,9 +97,9 @@ int main()
     // else
     //     cout << "False";
 
-    int n;
-    cin >> n;
-    cout << fibonacci(n);
+    // int n;
+    // cin >> n;
+    // cout << fibonacci(n);
     // int num1 = 0;
     // int num2 = 1;
     // int current = 0;
@@ -80,6 +112,25 @@ int main()
     // }
 
     // cout << current;
+
+    int n;
+    cin >> n;
+
+    int arr[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+    if (isArraySorted(n, arr))
+        cout << "Sorted";
+    else
+        cout << "Not Sorted";
+    // selectionSort(n, arr);
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cout << arr[i] << " ";
+    // }
 
     return 0;
 }
