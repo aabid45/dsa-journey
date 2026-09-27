@@ -1,17 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// bool isArraySorted(int n, int arr[])
-// {
-//     for (int i = 0; i < n - 1; i++)
-//     {
-//         if (arr[i] > arr[i + 1])
-//         {
-//             return false;
-//         }
-//     }
-//     return true;
-// }
+bool isArraySorted(int n, int arr[])
+{
+    for (int i = 0; i < n - 1; i++)
+    {
+        if (arr[i] > arr[i + 1])
+        {
+            return false;
+        }
+    }
+    return true;
+}
 
 void LargestElement(int n, int arr[])
 {
@@ -138,19 +138,85 @@ int main()
     // }
     // cout << temp;
 
-    int n;
-    cin >> n;
-    int arr[n];
+    // int n;
+    // cin >> n;
+    // int arr[n];
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cin >> arr[i];
+    // }
+
+    // selectionSort(n, arr);
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cout << arr[i];
+    // }
+
+    // int n;
+    // cin >> n;
+    // int arr[n];
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cin >> arr[i];
+    // }
+
+    // int hash[13] = {0};
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     hash[arr[i]]++;
+    // }
+
+    // int queries;
+    // cin >> queries;
+
+    // while (queries--)
+    // {
+    //     int number;
+    //     cin >> number;
+    //     cout << hash[number] << " ";
+    // }
+
+    // string str;
+    // cin >> str;
+
+    // int n = str.length();
+
+    // int hash[26] = {0};
+    // for (int i = 0; i < n; i++)
+    // {
+    //     hash[str[i] - 'a']++;
+    // }
+
+    // int queries;
+    // cin >> queries;
+    // while (queries--)
+    // {
+    //     char character;
+    //     cin >> character;
+    //     cout << hash[character - 'a'] << " ";
+    // }
+
+    string str;
+    cin >> str;
+
+    int n = str.length();
+
+    map<char, int> mpp;
     for (int i = 0; i < n; i++)
     {
-        cin >> arr[i];
+        mpp[str[i]]++;
     }
 
-    selectionSort(n, arr);
-
-    for (int i = 0; i < n; i++)
+    int queries;
+    cin >> queries;
+    while (queries--)
     {
-        cout << arr[i];
+        char character;
+        cin >> character;
+        cout << mpp[character] << " ";
     }
 
     return 0;
