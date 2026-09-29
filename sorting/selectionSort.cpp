@@ -6,18 +6,17 @@ void selectionSort(int arr[], int n)
 {
     for (int i = 0; i <= n - 2; i++)
     {
-        int minimum = i;
+        int minindex = i;
         for (int j = i + 1; j <= n; j++)
         {
-            if (arr[j] < arr[minimum])
+            if (arr[j] < arr[minindex])
             {
-                minimum = j;
-                cout << arr[minimum] << endl;
+                minindex = j;
             }
         }
-        int tempp = arr[minimum];
-        arr[minimum] = arr[i];
-        arr[i] = tempp;
+        int temp = arr[minindex];
+        arr[minindex] = arr[i];
+        arr[i] = temp;
     }
 }
 
@@ -34,7 +33,7 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        cout << arr[i];
+        cout << arr[i] << " ";
     }
 
     return 0;
