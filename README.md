@@ -42,7 +42,7 @@
 - Dynamic Programming: **0/70**
 - Bit Manipulation: **0/20**
 
-**Total Problems Solved:** **32/580**
+**Total Problems Solved:** **33/580**
 
 ---
 
