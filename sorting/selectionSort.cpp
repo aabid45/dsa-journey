@@ -43,23 +43,23 @@ int main()
 // #include <bits/stdc++.h>
 // using namespace std;
 
-// void selectionSort(int n, int arr[])
-// {
-//     for (int i = 0; i <= n - 2; i++)
-//     {
-//         int maxindex = i;
-//         for (int j = i + 1; j <= n-1; j++)
-//         {
-//             if (arr[j] > arr[maxindex])
-//             {
-//                 maxindex = j;
-//             }
-//         }
-//         int temp = arr[maxindex];
-//         arr[maxindex] = arr[i];
-//         arr[i] = temp;
-//     }
-// }
+void selectionSort(int n, int arr[])
+{
+    for (int i = 0; i <= n - 2; i++)
+    {
+        int maxindex = i;
+        for (int j = i + 1; j <= n-1; j++)
+        {
+            if (arr[j] > arr[maxindex])
+            {
+                maxindex = j;
+            }
+        }
+        int temp = arr[maxindex];
+        arr[maxindex] = arr[i];
+        arr[i] = temp;
+    }
+}
 
 // int main()
 // {

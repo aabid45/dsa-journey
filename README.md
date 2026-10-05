@@ -53,6 +53,3 @@ The hardest problem is always the one you don't start.
 One commit today is better than zero.
 
 Months from now, this repository won't just contain solutions—it will tell the story of how I became a better engineer.
-
-Future me is counting on today's me.
-had a long break, will have to get back on track- working on a priority project so missed it again from 5 OCT
